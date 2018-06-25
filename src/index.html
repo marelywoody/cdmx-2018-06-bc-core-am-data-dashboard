@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
@@ -8,26 +8,30 @@
   <body>
     <div>
       <form action="">
-        <select name="" id="" required>
+        <select id="sede" required>
           <option value="" disabled selected>Selecciona la sede</option>
-          <option value="CDMX">CDMX</option>
-          <option value="Lima">Lima</option>
-          <option value="Santiago">Santiago</option>
+          <option value="lima">Lima</option>
+          <option value="cdmx">CDMX</option>
+          <option value="santiago">Santiago</option>
         </select>
-
       </form>
     </div>
     <div>
       <form action="">
-        <select name="" id="" required>
-          <option value="" disabled selected>Selecciona la sgeneración</option>
+        <select id="generacion" required>
+          <option value="" disabled selected>Selecciona la generación</option>
           <option value="5">Quinta</option>
           <option value="4">Cuarta</option>
           <option value="3">tercera</option>
         </select>
-         <input type="submit" value="Submit">
+         <input type="button" value="Buscar" id="buton">
       </form>
     </div>
+  </div>
+  <div>
+    <div id="resultado"></div>
+  </div>
     <script src="main.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
