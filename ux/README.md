@@ -1,61 +1,70 @@
-# **Data Dashboard**
+# DATA DASHBOARD
+----
 
-## **Proceso de UX**
+## **UX**
+----
 
-Nuestro primer acercamiento lo haremos a través del proceso de diseño, donde pasamos por diferentes etapas como:
+> En este espacio describiremos como fue nuestro acercamiento con el proceso de UX durante 
+el desarrollo del proyecto de **data dashboard**.
+----
 
-### **1. Descubrimiento e investigación**
-(En esta fase es donde vamos a tener ese proceso de investigación y acercamiento con el usuario, es donde vamos a obtener el conocimiento para poder saber a quién vamos a llegar, pero de manera más profunda. Es tener la empatía y el acercamiento necesario para conocerlo.
+### Objetivos
 
-También vamos a tener en cuenta al negocio, sus objetivos y a los stakeholders(involucrados)).
+* Desarrollar un proyecto en el cual se impletente una interfaz con una usuabilidad fácil de manejar, y con la que las Training Managers puedan obtener más fácilmente los datos que necesiten.
 
-__Usuarixs:__  (Toda la información que sepas de ellxs, ya sea porque las has podido observar o porque obtuviste datos directamente de ellas)
+* Conocer más acerca del proceso de UX mediante su implementación en el desarrollo del proyecto de **data dashboard**.
+---- 
 
-__Necesidades de las usuarias:__
+### Proceso
+----
 
+* ### Obtención de datos
+Cuando se nos entregaron los requerimientos del proyecto de **data dashboard**, en lo primero que pensamos que deberiamos hacer fue en un acercamiento, mediante una entrevista a la Training Manager de nuestra sede México (Lucile). Esto para conocer mejor, el por que las Training Managers requieren manejar data, y como seria el diseño e implementación de la mejor solución que nosotros pudieramos ofrecerles.
 
-__Objetivos de las usuarias:__ (Lo que quieren o esperan lograr)
+Por otra parte, también buscamos referencias de otros sistemas de manejo de data(incluidos en el readme de los requerimientos del proyecto), para poder darnos ideas de como esos sistemas visualizan su data. 
 
+> *Acontinuación desplegaremos las preguntas que diseñamos para la entrevista con nuestra Training Manager*
 
-__Pain points:__ (En sus actividades diarias qué es lo que más les molesta u obstaculiza en el proceso de  realizar sus actividades/objetivos)
+    ***CUESTIONARIO***
 
-__Sentimientos:__(Sentimientos que les surgen dentro del proceso de sus actividades. Identificar cuáles predominan)
+    1. ¿Qué tipo de sistema de manejo de data utilizan actualmente?
 
-__Técnicas usadas en esta fase:__ (Sabemos que en este punto, tal vez, sólo has ocupado encuestas, no te olvides de documentar este proceso de recolección de datos)
+    2. ¿Cómo es el proceso actual del manejo de data?
 
-__5. Objetivos del negocio:__ (Enlistarlo(s))
+    3. ¿Por qué es importante el manejo de data para las Training Manager?
 
-__6. Motivaciones del negocio para el data dashboard:__(Enlistarlo(s))
+    4. ¿Qué tan seguido utilizas el sistema para visualizar el avance de las alumnas?
 
-### **2. Síntesis y definición**
-(Dada la fase anterior de investigación, ahora vamos a tomar todos los datos más importantes y transformarlos en información valiosa para comenzar a orientarse a la solución. También vamos a entender lo que la empresa quiere de ese producto y comenzar a entender ambas visiones con el fin de encontrar un punto armónico)
+    5. ¿Qué tipo de dispositivo utilizas lap,celular o tableta para checar la data?
 
-__1. Cuáles crees que son los datos más importantes a tener en cuenta para el Data Dashboard:__
+    6. ¿Qué tipo de informaión te gustaría que se visualizara? 
 
-   - Sobre las estudiantes:
- 
+    7. ¿Qué tipo de gráfica te gustaría que se pusieran?
 
-__2. Lo que los usuarios esperan obtener:__
+    8. Además de las Training Manager,¿quién más del equipo de laboratoria usa esta data?   
 
+ ***Nota*** Aparte de nuestra entrevista con la Training Manager de México(Lucile), gracias a nuestra compañeras logramos obtener las entrevistas de Training Manager de otras sedes.
 
-__3. Insights:__
+* ### Planificación
 
-__4. Data proporcionada:__ 
+> Primera 
 
-     -_Data relacionada a los cursos:_
+Ahora que hemos tenido un acercamiento con el usuario, y obtuvimos los datos que necesitamos por ahora, podemos comenzar un filtro, y asi poder ver que priorizar y que poder dejar para hacer después de que las actividades priorizadas estes hechas, comenzamos con un prototipado de como queremos que sea nuestra interfaz(baja fidelidas), que es el sketch. En este pondremos lo que nosotras, con la obtención de datos ya pasados por nuestros filtroz, creamos será la mejor solución.
 
-__5. Insights del negocio:__
+* ### Sketch
 
-### **3. Ideación**
-(Acá se comienza a pensar esa solución tomando en cuenta la información recopilada y procesada)
+Con los datos que logramos obtener, por medio de la entrevista logramos hacer un diseño(baja fidelidad), con el cuel podemos comenzar a trabajar.
 
-### **4. Prototipado**
-(Esta es la fase creativa, donde se comienza a construir el Data dashboard con la información obtenida de las fases anteriores. Se reafirma crear la experiencia de usuario, donde la solución resuelve necesidades y facilita la vida)
+<img align="center" src="./imagenes/1.jpg" />
 
-Sketch: (Adjuntar liga)
+<img align="center" src="./imagenes/2.jpg" />
 
-Prototipo en figma: (Adjuntar liga)
+<img align="center" src="./imagenes/3.jpg" />
 
-### **5. User testing**
-(Si deseas validar tu propuesta, acércate a tu usuario y que te de feedback con el fin de mejorar tu producto en beneficio del negocio y de tu usuarix).
-****
+<img align="center" src="./imagenes/4.jpg" />
+
+<img align="center" src="./imagenes/5.jpg" />
+
+ ***Nota*** Por las respuestas obtenidas durante la entrevista con nuestra Training Manager, y las adqueridas de otros Training Managers, quisimos diseñar una interfaz sencilla y de fácil utilización.  
+
+* ### Diseño(Alta fidelidad)
