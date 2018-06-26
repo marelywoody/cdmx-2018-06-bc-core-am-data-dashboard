@@ -6,13 +6,18 @@ window.data = {
             })
             .then(function(data){
                 let obtenidos = data.lima.generacion.cuarta.estudiantes;
-                let contenedor;
+                console.log(data.lima.generacion.cuarta.estudiantes)
+                let contenedor = '';
                 obtenidos.forEach(element => {
-                    contenedor= `${element.name}`;
-                    console.log(element.correo)
+                    contenedor += `<li>${element.nombre}</li>`;
+                    console.log(element.nombre)
+
                 });
-                console.log(contenedor);
-            })
+                let retornados = JSON.stringify(contenedor);
+                let result =  document.getElementById("resultado");
+                result.insertAdjacentHTML("beforeEnd", contenedor)
+                console.log(retornados);
+            })           
     },
 
 
