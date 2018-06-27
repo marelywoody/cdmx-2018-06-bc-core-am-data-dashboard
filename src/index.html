@@ -3,55 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="icon" href="./imagenes/l.ico">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <img src="https://www.google.com.mx/search?q=laboratoria+logo&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiRqsTDqfDbAhUFUa0KHaE4COYQ_AUICigB&biw=1241&bih=659#imgrc=DUSRm0vTttVg2M:" alt="">
-        <hr>
-      </div>
-      <div class="row">
-        <nav>
-          <li> <a href="#">SEDE</a</li>
-        </nav>
 
-          <form action="" class="row justify-content-left">
-            <select id="sede" required  class="input-group mb-3">
-              <option value="" disabled selected>Selecciona la sede</option>
-              <option value="lima">Lima</option>
-              <option value="cdmx">CDMX</option>
-              <option value="santiago">Santiago</option>
-            </select>
-          </form>
-
-
-      </div>
-      <div class="row">
-        <div class="col-4 offset-md-2">
-        <form>
-          <select id="generacion" class="row justify-content-left" required>
-            <option value="" disabled selected>Selecciona la generación</option>
-            <option value="5">Quinta</option>
-            <option value="4">Cuarta</option>
-            <option value="3">tercera</option>
-          </select>
-          <div class="row justify-content-center">
-             <input type="button" value="Buscar" id="buton">
-          </div>
-
-        </form>
-        </div>
-      </div>
-
-
-  </div>
-  <div>
-    <div id="resultado"></div>
-  </div>
-    <script src="main.js"></script>
-    <script src="data.js"></script>
+    <div id="encabezado">
+      <h1><img src="./imagenes/logo.png" alt="laboratoria"></h1>
+      <hr>
     </div>
+
+    <div id="cuerpo">
+      <form id="usuario">
+          <input type="email" placeholder="Usuario">
+          <input type="password" placeholder="Contraseña">
+          <input type="button" value="Ingresar">
+      </form>
+    </div>
+
+    <div id="menu">
+      <form>
+        <select required>
+          <option value="" disabled selected>Selecciona una sede</option>
+          <option value="lima">Lima</option>
+          <option value="cdmx">CDMX</option>
+          <option value="santiago">Santiago</option>
+        </select>
+        
+        <select required>
+          <option value="" disabled selected>Selecciona una Generación</option>
+          <option value="quinta">Quinta Generación</option>
+          <option value="cuarta">Cuarta Generación</option>
+          <option value="tercera">Tercera Generación</option>
+        </select>
+      </form>
+    </div>
+
+    <section id="data">
+    </section>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
