@@ -1,6 +1,8 @@
 window.data = {
 
     computeStudentsStats: (laboratoria) => {
+        let laboratoria = fetch('../data/laboratoria.json');
+        data.computeStudentsStats(laboratoria);
             laboratoria.then(function(res){
                 return res.json();
             })
