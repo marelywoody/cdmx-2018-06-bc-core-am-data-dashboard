@@ -51,7 +51,7 @@ Por otra parte, también buscamos referencias de otros sistemas de manejo de dat
 
 Ahora que hemos tenido un acercamiento con el usuario, y obtuvimos los datos que necesitamos por ahora, podemos comenzar un filtro, y asi poder ver que priorizar y que poder dejar para hacer después de que las actividades priorizadas estes hechas, comenzamos con un prototipado de como queremos que sea nuestra interfaz(baja fidelidad), que es el sketch. En este pondremos lo que nosotras, con la obtención de datos ya pasados por nuestros filtros, la que será la mejor solución.
 
-* ### Sketch
+* ### Sketch (baja fidelidad)
 
 Con los datos que logramos obtener, por medio de la entrevista logramos hacer un diseño(baja fidelidad), con el cuel podemos comenzar a trabajar.
 
@@ -68,3 +68,15 @@ Con los datos que logramos obtener, por medio de la entrevista logramos hacer un
  ***Nota*** Por las respuestas obtenidas durante la entrevista con nuestra Training Manager, y las adqueridas de otros Training Managers, diseñamos una interfaz sencilla y de fácil utilización.  
 
 * ### Diseño(Alta fidelidad)
+Teniendo encunta los sketch de baja fidelidad se crearon los sketch de alta fidelidad, utilizando los colores emrpesariales asi como la sencilles que piden las TM para poder accesar al data dashboard.
+
+* ### Sketch (alta fidelidad)
+ <img align="center" src="./imagenes/s.jpg" />
+
+ <img align="center" src="./imagenes/s1.jpg" />
+
+ <img align="center" src="./imagenes/s2.jpg" />
+
+ <img align="center" src="./imagenes/s3.jpg" />
+
+ <img align="center" src="./imagenes/s4.jpg" />
