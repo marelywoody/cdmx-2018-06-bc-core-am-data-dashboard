@@ -8,17 +8,31 @@
     <link rel="icon" href="./imagenes/l.ico">
   </head>
   <body>
-
     <div id="encabezado">
-      <h1><img src="./imagenes/logo.png" alt="laboratoria"></h1>
-      <hr>
+      <div class="col-8  offset-md-4">
+          <h1><img class='logo'src="./imagenes/logo.png" alt="laboratoria"></h1>
+      </div>
+      <div class="renglon col-12">
+
+      </div>
+
     </div>
 
-    <div id="cuerpo">
+    <div id="cuerpo" class= "col-4 offset-md-4">
       <form id="usuario">
+        <div class="row col-3 offset-md-3">
           <input type="email" placeholder="Usuario">
+        </div>
+        <div class="row espacio">
+        </div>
+        <div class="row col-3 offset-md-3">
           <input type="password" placeholder="Contraseña">
-          <input type="button" value="Ingresar" id="buton">
+        </div>
+
+        <div class="row col-3 offset-md-8 ">
+          <button type="button" class="btn btn-warning" value="Ingresar" id="buton">INGRESAR</button>
+        </div>
+
       </form>
     </div>
 
@@ -30,7 +44,7 @@
           <option value="cdmx">CDMX</option>
           <option value="santiago">Santiago</option>
         </select>
-        
+
         <select id="generacion" required>
           <option value="" disabled selected>Selecciona una Generación</option>
           <option value="quinta">Quinta Generación</option>
