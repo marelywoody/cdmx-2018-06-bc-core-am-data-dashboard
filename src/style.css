@@ -1,10 +1,24 @@
-hr{
-  width: 100%;
-  border:  0.1em solid #ffe521;
-}
+
 #sede{
   background-color: #ffe521;
 }
 #generacion{
   background-color: #ffe521;
+}
+.renglon{
+  width: 100%;
+  border: 10px solid #FAD905
+}
+.logo{
+  width: 500px;
+  height: auto;
+}
+#cuerpo{
+  border: 1px solid #FAD905;
+  border-radius: 10px;
+  padding: 1%;
+  margin-top: 15%;
+}
+.espacio{
+  margin-top: 10%;
 }
