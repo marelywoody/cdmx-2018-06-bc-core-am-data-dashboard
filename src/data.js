@@ -1,52 +1,28 @@
-window.data = {
+let laboratoria = fetch('../data/laboratoria.json');
 
-    computeStudentsStats: (laboratoria) => {
-        let laboratoria = fetch('../data/laboratoria.json');
-        data.computeStudentsStats(laboratoria);
-            laboratoria.then(function(res){
-                return res.json();
-            })
-            .then(function(data){
-                let obtenidos = data.lima.generacion.cuarta.estudiantes;
-                console.log(data.lima.generacion.cuarta.estudiantes)
-                let contenedor = '';
-                obtenidos.forEach(element => {
-                    contenedor += `<li>${element.nombre}</li>`;
-                    console.log(element.nombre)
+window.computeStudentsStats= (laboratoria) => {
 
-                });
-                let retornados = JSON.stringify(contenedor);
-                let result =  document.getElementById("resultado");
-                result.insertAdjacentHTML("beforeEnd", contenedor)
-                console.log(retornados);
-            })           
-    },
+    laboratoria.then(function (res) {
+        return res.json();
 
+    }).then(function (dato) {
+        let sedeOption = dato.lima;
+        let sedeSave = '';
+        sedeOption.forEach(element => {
+            sedeSave += `<li>${element.generacion}</li>`;
+            console.log(element.generacion);
+        });
+    })               
+};
 
-    
-    computeGenerationsStats: () => {
-
-    },
-
-    sortStudents: () => {
-
-    },
-
-    filterStudents: () => {
-
-    }
+window.computeGenerationsStats= (laboratoria) => {
 
 };
-/*
 
+window.sortStudents= (laboratoria) => {
 
-fetch('../data/laboratoria.json')
-.then(function(res){
-    return res.json();
-})
-.then(function(data){
-        let laboratoria = data.lima.generacion.cuarta.estudiantes;
-       let resultado = JSON.stringify(laboratoria);
-       console.log(resultado);
-        document.getElementById('resultado').innerHTML = resultado;
-})*/
+};
+
+window.filterStudents= (laboratoria) => {
+
+};
