@@ -1,27 +1,55 @@
 let body = document.getElementById('cuerpo');
+
 let menu = document.getElementById('menu');
+
 menu.style.display = 'none';
+let menu2 = document.getElementById('menu2');
+
+menu2.style.display = 'none';
 let data = document.getElementById('data');
-menu.style.display = 'none';
+
+data.style.display = 'none';
 let buton = document.getElementById('buton');
-let sede = document.getElementById('sede');
-let generation = document.getElementById('generacion');
 
 
 buton.addEventListener('click',access);
 
 function access() {
     body.style.display = 'none';
-    menu.style.display = 'inline-block'; 
-    generation.style.display = 'none';
+    menu.style.display = 'inline-block';
 };
 
-sede.addEventListener('onchange',selet);
+let sede1 = document.getElementById('sede');
 
-function selet(){
-    if (sede == 'cdmx') {
-        alert('Selecciona una sede');
+sede1.addEventListener('change',sedeSelect);
+    
+function sedeSelect () {
+
+    let sede = sede1.value;
+    menu2.style.display = 'inline-block';
+
+    if (sede == 'lima') {
+        let data = document.getElementById('data').innerHTML=computeStudentsStats(laboratoria);
+    } else if (sede == 'cdmx') {
+        
+    } else{
+        
+    }
+};
+
+let generation1 = document.getElementById('generacion');
+
+generation1.addEventListener('change',generationSelect);
+
+function generationSelect () {
+
+    let generation = generation1.value;
+    
+    if (generation == 'quinta') {
+        
+    } else if (generation == 'cuarta') {
+        
     } else {
-    generation.style.display = 'inline-block';
+
     }
 };
