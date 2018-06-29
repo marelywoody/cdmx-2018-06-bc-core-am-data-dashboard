@@ -1,4 +1,4 @@
-let laboratoria = fetch('../data/laboratoria.json');
+let laboratoria = fetch('https://raw.githubusercontent.com/Dani1592/cdmx-2018-06-bc-core-am-data-dashboard/master/data/laboratoria.json');
 
 window.computeStudentsStats= (laboratoria) => {
 
@@ -12,7 +12,7 @@ window.computeStudentsStats= (laboratoria) => {
             sedeSave += `<li>${element.generacion}</li>`;
             console.log(element.generacion);
         });
-    })               
+    })
 };
 
 window.computeGenerationsStats= (laboratoria) => {

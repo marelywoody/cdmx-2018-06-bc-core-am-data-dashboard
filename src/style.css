@@ -7,18 +7,28 @@
 }
 .renglon{
   width: 100%;
-  border: 10px solid #FAD905
+  border: 5px solid #FAD905
 }
 .logo{
-  width: 500px;
+  width: auto;
   height: auto;
 }
 #cuerpo{
-  border: 1px solid #FAD905;
-  border-radius: 10px;
-  padding: 1%;
-  margin-top: 15%;
+  border: 3px solid #FAD905;
+  border-radius: 20px;
+  padding: 5%;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 .espacio{
   margin-top: 10%;
+}
+.btn{
+  margin-top: 350%;
+  margin-bottom: 15%;
+}
+.contraseña{
+background-color: gray;
+  margin-top: 20%;
+  margin-bottom: 6%;
 }
