@@ -8,17 +8,11 @@
     <link rel="icon" href="./imagenes/l.ico">
   </head>
   <body>
-    <div id="encabezado">
-
-      <div class="col-8  offset-md-4">
-          <h1><img class='logo'src="./imagenes/logo.png" alt="laboratoria"></h1>
-      </div>
-      <div class="renglon col-12">
-
-      </div>
-
-    </div>
-
+    <section id="encabezado">
+        <h1><img class='logo col-6  offset-md-5'src="./imagenes/logo.png" alt="laboratoria"></h1>
+        <div class="renglon col-12"></div>
+    </section>
+    <p>
     <section id="cuerpo" class= "col-4 offset-md-4">
       <form id="usuario">
         <div class="row col-3 offset-md-3">
@@ -26,38 +20,34 @@
         </div>
         <div class="row espacio">
         </div>
-        <div class="row col-3 offset-md-3">
-          <input type="password" placeholder="Contraseña">
-        </div>
-
+          <input class="constraseña row col-12" type="password" placeholder="Contraseña">
         <div class="row col-3 offset-md-8 ">
           <button type="button" class="btn btn-warning" value="Ingresar" id="buton">INGRESAR</button>
         </div>
-
       </form>
     </section>
-
-    <div id="menu">
-      <form>
-        <select id="sede" required>
-          <option value="" disabled selected>Selecciona una sede</option>
-          <option value="lima">Lima</option>
-          <option value="cdmx">CDMX</option>
-          <option value="santiago">Santiago</option>
-        </select>
+    <section class="row col-3" id="menu">
+        <form>
+          <select id="sede" required>
+            <option value="" disabled selected>Selecciona una sede</option>
+            <option value="lima">Lima</option>
+            <option value="cdmx">CDMX</option>
+            <option value="santiago">Santiago</option>
+         </select>
       </form>
-    </div>
-    <div id="menu2">
-      <form>
+    </section>
+    </p>
+    <section id="menu2" class= "row col-3">
+
         <select id="generacion" required>
           <option value="" disabled selected>Selecciona una Generación</option>
           <option value="quinta">Quinta Generación</option>
           <option value="cuarta">Cuarta Generación</option>
           <option value="tercera">Tercera Generación</option>
         </select>
-      </form>
-    </div>
 
+    </section>
+</form>
     <section id="data">
     </section>
 
