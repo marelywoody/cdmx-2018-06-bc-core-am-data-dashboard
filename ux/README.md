@@ -8,11 +8,28 @@
 el desarrollo del proyecto de **data dashboard**.
 ----
 
+### ¿Qué es un **data dashboard**?
+
+Un **data dashboard** es una herramienta para las empresas que analizan información, la cual representa de manera visual y gráfica mediante el uso de los *KPI's* las principales métricas, que intervienen en la adquisición de los objetivos de una estrategia. Sirve para recolectar **data** en una organización, además de brindar información clave sobre el comportamiento del mercado y de los usuarios que pueden ser posibles clientes, esto ayuda a la organización a la hora de la toma de desiciones.
+
+> Beneficios de su uso 
+
+    * Permite visualizar errores en las organizaciones.
+
+    * Facilita la toma de desiciones.
+
+    * Monitorea la estrategia planteada. 
+
+    * Reporta las acciones y los resultados generados.
+
+    * Delimita estrategias y objetivos organizacionales.
+----
+
 ### Objetivos
 
-* Desarrollar un proyecto en el cual se impletente una interfaz con una usuabilidad fácil de manejar, y con la que las Training Managers puedan obtener más fácilmente los datos que necesiten.
+* Desarrollar un proyecto en el cual se impletente una interfaz con una usuabilidad fácil de manejar, y con la que las Training Managers puedan obtener más fácilmente los datos que necesiten de las alumnas.
 
-* Conocer más acerca del proceso de UX mediante su implementación en el desarrollo del proyecto de **data dashboard**.
+* Conocer más acerca del proceso de UX, durante el desarrollo del proyecto de **data dashboard** se implementara User Experience, obteniendo inforación del usuario atraves de la investigación(entrevistas).
 ----
 
 ### Proceso
@@ -43,9 +60,34 @@ Por otra parte, también buscamos referencias de otros sistemas de manejo de dat
 
     8. Además de las Training Manager,¿quién más del equipo de laboratoria usa esta data?   
 
- ***Nota*** Aparte de nuestra entrevista con la Training Manager de México(Lucile), gracias a nuestra compañeras logramos obtener las entrevistas de Training Manager de otras sedes.
 
-* ### Planificación
+***Nota*** Aparte de nuestra entrevista con la Training Manager de México(Lucile), gracias a nuestra compañeras logramos obtener las entrevistas de Training Manager de otras sedes.
+
+**Sitemas ya existentes de dashboard**
+
+Algunas de las referencias que encontramos que nos podian servir de ejemplo fueron: 
+
+* Google Analytics
+[Google Analytics](https://www.google.com/intl/es_ALL/analytics/features/index.html)
+<img align="center" src="./imagenes/google.png" />
+
+* Instituto Politécnico Nacional
+[IPN](http://www.ipn.mx/ofertaeducativa/Paginas/Estadisticas.aspx)
+<img align="center" src="" />
+
+* Mailchimp
+[Mailchimp](https://blog.mailchimp.com/new-list-dashboard/)
+<img align="center" src="./imagenes/mail.jpg" />
+
+* Quickbooks
+[Quickbooks](https://quickbooks.intuit.com/reporting/)
+<img align="center" src="./imagenes/quick.png" />
+----
+
+### Necesidades del usuario
+----
+
+### Planificación
 
 > Primera
 

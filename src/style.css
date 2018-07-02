@@ -1,34 +1,33 @@
-
 #sede{
   background-color: #ffe521;
 }
+
 #generacion{
   background-color: #ffe521;
 }
+
 .renglon{
   width: 100%;
-  border: 5px solid #FAD905
+  border: 5px solid #ffe521;
 }
-.logo{
-  width: auto;
-  height: auto;
-}
+
 #cuerpo{
-  border: 3px solid #FAD905;
+  border: 3px solid #ffe521;
   border-radius: 20px;
   padding: 5%;
   margin-top: 8%;
   margin-bottom: 8%;
 }
-.espacio{
-  margin-top: 10%;
+#buton{
+  position: relative;
+  top: 2em;
 }
-.btn{
-  margin-top: 350%;
-  margin-bottom: 15%;
+#arrow{
+  width: 5em;
+  height: 6em;
 }
-.contraseña{
-background-color: gray;
-  margin-top: 20%;
-  margin-bottom: 6%;
-}
+
+ #menu2{
+   position: absolute;
+   top: 9em;
+ }
