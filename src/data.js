@@ -18,6 +18,7 @@ window.computeStudentsStats= (laboratoria,pais) => {
           newElement.appendChild(document.createTextNode(key + " generación"))//le creas un hijo con texto
           document.getElementById("generacion").appendChild(newElement);
       //le creas un hijo al padre generacion
+
     })
   })
 };
