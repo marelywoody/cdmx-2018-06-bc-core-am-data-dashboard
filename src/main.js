@@ -1,5 +1,3 @@
-const laboratoria = '../data/laboratoria.json';
-
 let body = document.getElementById('cuerpo');
 
 let menu = document.getElementById('menu');
