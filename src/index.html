@@ -5,50 +5,65 @@
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./imagenes/l.ico">
+    <link rel="icon" href="./imagenes/laboratoria.ico">
   </head>
   <body>
-    <section id="encabezado">
-        <h1><img class='logo col-6  offset-md-5'src="./imagenes/logo.png" alt="laboratoria"></h1>
-        <div class="renglon col-12"></div>
-    </section>
-    <p>
-    <section id="cuerpo" class= "col-4 offset-md-4">
-      <form id="usuario">
-        <div class="row col-3 offset-md-3">
-          <input type="email" placeholder="Usuario">
-        </div>
-        <div class="row espacio">
-        </div>
-          <input class="constraseña row col-12" type="password" placeholder="Contraseña">
-        <div class="row col-3 offset-md-8 ">
-          <button type="button" class="btn btn-warning" value="Ingresar" id="buton">INGRESAR</button>
-        </div>
-      </form>
-    </section>
-    <section class="row col-3" id="menu">
-        <form>
-          <select id="sede" required>
-            <option value="" disabled selected>Selecciona una sede</option>
-            <option value="lima">Lima</option>
-            <option value="cdmx">CDMX</option>
-            <option value="santiago">Santiago</option>
-         </select>
-      </form>
-    </section>
-    </p>
-    <section id="menu2" class= "row col-3">
 
+    <section class="container-fluid">
+
+      <header id="encabezado">
+        <h1 class="text-center" id="imagen"><img src="./imagenes/logo.png" alt="laboratoria"></h1>
+        <hr class="renglon">
+      </header>
+
+        <div id="cuerpo" class= "text-center col-4 offset-md-4">
+          <form id="usuario" class="text-center form-group">
+            <input type="email" class="form-control" placeholder="Usuario">
+            <input type="password" class="form-control" placeholder="Contraseña">
+            <input type="button" value="Ingresar" class="btn btn-warning btn-md" id="buton">
+          </form>
+        </div>
+
+      <aside class="row justify-content-start">
+        <div id="menu" class="col-md-2">
+          <form class="form-group">
+            <select id="sede" class="custom-select" required>
+              <option value="" disabled selected>Selecciona una sede</option>
+              <option value="lima">Lima</option>
+              <option value="cdmx">CDMX</option>
+              <option value="santiago">Santiago</option>
+            </select>
+          </form>
+        </div>
+
+        <div id="menu2" class="col-md-2">
+          <form class="form-group">    
+           <select id="generacion" class="custom-select" required>
+              <option value="" disabled selected>Selecciona una Generación</option>
+              <option value="quinta">Quinta Generación</option>
+              <option value="cuarta">Cuarta Generación</option>
+              <option value="tercera">Tercera Generación</option>
+            </select>
+          </form>
+        </div>
+      </aside>
+
+<<<<<<< HEAD
         <select id="generacion" required>
 
         </select>
+=======
+      <section id="data">
+>>>>>>> upstream/master
 
-    </section>
-</form>
-    <section id="data">
-    </section>
+      </section>
 
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+      <footer>
+        <span  class="offset-md-11"><img src="./imagenes/flecha.jpg" alt="flecha" class="img-responsive" id="arrow"></span>
+      </footer>
+
+      <script src="data.js"></script>
+      <script src="main.js"></script>
+    </section>
   </body>
 </html>
