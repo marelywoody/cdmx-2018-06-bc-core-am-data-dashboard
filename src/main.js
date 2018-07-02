@@ -1,5 +1,3 @@
-const laboratoria = '../data/laboratoria.json';
-
 let body = document.getElementById('cuerpo');
 
 let menu = document.getElementById('menu');
@@ -24,18 +22,18 @@ function access() {
 let sede1 = document.getElementById('sede');
 
 sede1.addEventListener('change',sedeSelect);
-    
+
 function sedeSelect () {
 
     let sede = sede1.value;
     menu2.style.display = 'inline-block';
 
     if (sede == 'lima') {
-        let data = document.getElementById('data').innerHTML=computeStudentsStats(laboratoria);
+        let data = document.getElementById('data').innerHTML=computeStudentsStats(laboratoria,'lima');
     } else if (sede == 'cdmx') {
-        
-    } else{
-        
+        let data = document.getElementById('data').innerHTML=computeStudentsStats(laboratoria,'mexico');
+    } else {
+        let data = document.getElementById('data').innerHTML=computeStudentsStats(laboratoria,'santiago');
     }
 };
 
@@ -46,11 +44,11 @@ generation1.addEventListener('change',generationSelect);
 function generationSelect () {
 
     let generation = generation1.value;
-    
+
     if (generation == 'quinta') {
-        
+    
     } else if (generation == 'cuarta') {
-        
+
     } else {
 
     }
