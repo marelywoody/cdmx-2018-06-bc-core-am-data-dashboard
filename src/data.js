@@ -9,8 +9,10 @@ window.computeStudentsStats= (laboratoria,pais) => {
    //console.log(document.getElementById("generacion").hasChildNodes())
    let generacionSelect = document.getElementById('generacion');
    if (generacionSelect.hasChildNodes()){
+
      while(generacionSelect.childNodes.length >= 1){
        generacionSelect.removeChild(generacionSelect.firstChild);
+
      }
 
    }
@@ -34,15 +36,14 @@ fetch(laboratoria).then(function (res) {
 return res.json();
 })
 .then(function (dato) {
-  //console.log(dato[pais].generacion) //asi entras aun objeto por medio de una variable :)
+   //asi entras aun objeto por medio de una variable :)
     let estudiantesOption = dato[sede].generacion[generacion].estudiantes;
-    console.log(estudiantesOption);
     Object.keys(estudiantesOption).forEach ((estudent)=>{
       let estudiante = estudiantesOption[estudent];
-
       let cajaEstudiante = document.createElement("article");
+console.log(cajaEstudiante)
       cajaEstudiante.setAttribute("class","jumbotron");
-      //crear nombre
+     //crear nombre
       let nombre1 = document.createElement("h6");
       nombre1.appendChild(document.createTextNode('name: '+ estudiante.nombre));
       cajaEstudiante.appendChild(nombre1);
@@ -56,7 +57,7 @@ return res.json();
       cajaEstudiante.appendChild(programDuration );
 
       document.getElementById('resultadosGeneration').appendChild(cajaEstudiante);
-
+console.log(cajaEstudiante)
 
 
     })
