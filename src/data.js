@@ -45,16 +45,23 @@ console.log(cajaEstudiante)
       cajaEstudiante.setAttribute("class","jumbotron");
      //crear nombre
       let nombre1 = document.createElement("h6");
-      nombre1.appendChild(document.createTextNode('name: '+ estudiante.nombre));
+      nombre1.appendChild(document.createTextNode('Name: '+ estudiante.nombre));
       cajaEstudiante.appendChild(nombre1);
 
-      let correo = document.createElement("p");
-      correo.appendChild(document.createTextNode('email: ' + estudiante.correo));
+      let correo = document.createElement("article");
+      correo.appendChild(document.createTextNode('E-mail: ' + estudiante.correo));
       cajaEstudiante.appendChild(correo);
 
       let programDuration = document.createElement("article");
-      programDuration .appendChild(document.createTextNode('Duracion de programa: '+ estudiante.progreso.duracionPrograma));
+      programDuration.appendChild(document.createTextNode('Duracion de programa: '+ estudiante.progreso.duracionPrograma));
       cajaEstudiante.appendChild(programDuration );
+
+      let percentejeDuration = document.createElement("article");
+      percentejeDuration.appendChild(document.createTextNode('Porcentaje completado: '+ estudiante.progreso.porcentajeCompletado));
+      cajaEstudiante.appendChild(percentejeDuration );
+
+    
+
 
       document.getElementById('resultadosGeneration').appendChild(cajaEstudiante);
 console.log(cajaEstudiante)
