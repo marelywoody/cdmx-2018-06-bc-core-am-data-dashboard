@@ -17,6 +17,7 @@
   padding: 5%;
   margin-top: 8%;
   margin-bottom: 8%;
+  width: 80% !important;
 }
 #buton{
   position: relative;
@@ -37,3 +38,9 @@
    position: absolute;
    top: 9em;
  }
+<<<<<<< HEAD
+=======
+ #resultadosGeneration{
+  margin-top:8%;
+ }
+>>>>>>> upstream/master

@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <section class="container-fluid offset-md-1">
+    <div class="container-fluid">
 
       <header id="encabezado">
         <h1 class="text-center" id="imagen"><img src="./imagenes/logo.png" alt="laboratoria"></h1>
@@ -24,12 +24,12 @@
           </form>
         </div>
 
-      <aside class="row justify-content-start">
+      <aside class="row fixed-left">
         <div id="menu" class="col-md-2">
           <form class="form-group">
             <select id="sede" class="custom-select" required>
               <option value="" disabled selected>Selecciona una sede</option>
-
+              <option value="cdmx">CDMX</option>
             </select>
           </form>
         </div>
@@ -38,23 +38,24 @@
           <form class="form-group">
            <select id="generacion" class="custom-select" required>
               <option value="" disabled selected>Selecciona una Generación</option>
+              <option value="cuarta">cuarta</option>
             </select>
           </form>
         </div>
       </aside>
 
-      <section id="data" class="container">
+      <main id="data">
 
-      </section>
-      <div id="resultadosGeneration" style="margin-top:8% ">
+      </main>
+      <div id="resultadosGeneration">
       </div>
-      <footer id="pie">
-        <span  class="offset-10 container-fluid"><img src="./imagenes/flecha.jpg" alt="flecha" class="img-responsive" id="arrow"></span>
 
+      <footer class="fixed-bottom">
+        <img src="./imagenes/flecha.jpg" alt="flecha" class="offset-11" id="arrow">
       </footer>
 
       <script src="data.js"></script>
       <script src="main.js"></script>
-    </section>
+    </div>
   </body>
 </html>
