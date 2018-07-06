@@ -1,6 +1,38 @@
+window.computeStudentsStats= (laboratoria,generacion,sede) => {
+console.log(laboratoria,generacion,sede);
+fetch(laboratoria).then(function (res) {
+return res.json();
+})
+.then(function (dato) {
+   //asi entras aun objeto por medio de una variable :)
+    let estudiantesOption = dato[sede].generacion[generacion].estudiantes;
+    Object.keys(estudiantesOption).forEach ((estudent)=>{
+      let estudiante = estudiantesOption[estudent];
+      let cajaEstudiante = document.createElement("article");
+console.log(cajaEstudiante)
+      cajaEstudiante.setAttribute("class","jumbotron");
+     //crear nombre
+      let nombre1 = document.createElement("h6");
+      nombre1.appendChild(document.createTextNode('name: '+ estudiante.nombre));
+      cajaEstudiante.appendChild(nombre1);
+
+      let correo = document.createElement("p");
+      correo.appendChild(document.createTextNode('email: ' + estudiante.correo));
+      cajaEstudiante.appendChild(correo);
+
+      let programDuration = document.createElement("article");
+      programDuration .appendChild(document.createTextNode('Duracion de programa: '+ estudiante.progreso.duracionPrograma));
+      cajaEstudiante.appendChild(programDuration );
+
+      document.
+     getElementById('resultadosGeneration').appendChild(cajaEstudiante);
+console.log(cajaEstudiante)
 
 
-window.computeStudentsStats= (laboratoria,pais) => {
+    })
+})
+};
+window.computeGenerationsStats= (laboratoria,pais) => {
 
    fetch(laboratoria).then(function (res) {
  return res.json();
@@ -28,53 +60,4 @@ window.computeStudentsStats= (laboratoria,pais) => {
          //le creas un hijo al padre generacion
     })
   })
-};
-
-window.computeGenerationsStats= (laboratoria,generacion,sede) => {
-console.log(laboratoria,generacion,sede);
-fetch(laboratoria).then(function (res) {
-return res.json();
-})
-.then(function (dato) {
-   //asi entras aun objeto por medio de una variable :)
-    let estudiantesOption = dato[sede].generacion[generacion].estudiantes;
-    Object.keys(estudiantesOption).forEach ((estudent)=>{
-      let estudiante = estudiantesOption[estudent];
-      let cajaEstudiante = document.createElement("article");
-console.log(cajaEstudiante)
-      cajaEstudiante.setAttribute("class","jumbotron");
-     //crear nombre
-      let nombre1 = document.createElement("h6");
-      nombre1.appendChild(document.createTextNode('Name: '+ estudiante.nombre));
-      cajaEstudiante.appendChild(nombre1);
-
-      let correo = document.createElement("article");
-      correo.appendChild(document.createTextNode('E-mail: ' + estudiante.correo));
-      cajaEstudiante.appendChild(correo);
-
-      let programDuration = document.createElement("article");
-      programDuration.appendChild(document.createTextNode('Duracion de programa: '+ estudiante.progreso.duracionPrograma));
-      cajaEstudiante.appendChild(programDuration );
-
-      let percentejeDuration = document.createElement("article");
-      percentejeDuration.appendChild(document.createTextNode('Porcentaje completado: '+ estudiante.progreso.porcentajeCompletado));
-      cajaEstudiante.appendChild(percentejeDuration );
-
-    
-
-
-      document.getElementById('resultadosGeneration').appendChild(cajaEstudiante);
-console.log(cajaEstudiante)
-
-
-    })
-})
-};
-
-window.sortStudents= (laboratoria) => {
-
-};
-
-window.filterStudents= (laboratoria) => {
-
 };
