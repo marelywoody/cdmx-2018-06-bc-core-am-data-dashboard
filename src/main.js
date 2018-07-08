@@ -42,17 +42,18 @@ function sedeCreate (){
 }  )
 }
 
+
 function sedeSelect () {
 
     let sede = sede1.value;
     menu2.style.display = 'inline-block';
 
     if (sede == 'lima') {
-        let data = document.getElementById('data').innerHTML = computeStudentsStats(laboratoria,'lima');
+        let data = document.getElementById('data').innerHTML = computeGenerationsStats(laboratoria,'lima');
     } else if (sede == 'mexico') {
-        let data = document.getElementById('data').innerHTML = computeStudentsStats(laboratoria,'mexico');
+        let data = document.getElementById('data').innerHTML = computeGenerationsStats(laboratoria,'mexico');
     } else {
-        let data = document.getElementById('data').innerHTML = computeStudentsStats(laboratoria,'santiago');
+        let data = document.getElementById('data').innerHTML = computeGenerationsStats(laboratoria,'santiago');
 
     }
 };
@@ -67,6 +68,6 @@ function generationSelect () {
 //console.log(generation)
   let sede = document.getElementById("sede").value;
   //console.log(sede)
-  let result  = document.getElementById('resultadosGeneration').innerHTML = computeGenerationsStats(laboratoria,generation,sede);
+  let result  = document.getElementById('resultadosGeneration').innerHTML = computeStudentsStats(laboratoria,generation,sede);
 
 };

@@ -20,6 +20,7 @@ body{
   padding: 5%;
   margin-top: 8%;
   margin-bottom: 8%;
+  width: 80% !important;
 }
 #buton{
   position: relative;
@@ -36,14 +37,17 @@ body{
    bottom: 0em;
 }
 #arrow{
-  width: 5em;
-  height: 6em;
+  width: 10em;
+  height: 10em;
 }
 
  #menu2{
    position: absolute;
    top: 9em;
  }
+<<<<<<< HEAD
+=======
  #resultadosGeneration{
   margin-top:8%;
  }
+>>>>>>> upstream/master
