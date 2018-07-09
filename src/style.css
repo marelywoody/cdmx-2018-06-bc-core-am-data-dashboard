@@ -1,8 +1,7 @@
-#sede{
-  background-color: #ffe521;
+body{
+  font-family:'Open Sans';
 }
-
-#generacion{
+#sede, #generacion{
   background-color: #ffe521;
 }
 
@@ -17,21 +16,21 @@
   padding: 5%;
   margin-top: 8%;
   margin-bottom: 8%;
-
 }
+
 #buton{
   position: relative;
   top: 2em;
 }
-#pie{
-   padding: 0em;
-   position: fixed;
-   left: 73em;
-   bottom: 0em;
+
+#btn-move{
+  position: relative;
+  bottom: 1em;
 }
+
 #arrow{
-  width: 10em;
-  height: 10em;
+  width: 5em;
+  height: 6em;
 }
 
  #menu2{

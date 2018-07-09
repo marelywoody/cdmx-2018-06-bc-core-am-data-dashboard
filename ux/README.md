@@ -1,7 +1,7 @@
 # DATA DASHBOARD
 ----
 
-## **UX**
+## ** README UX**
 ----
 
 > En este espacio describiremos como fue nuestro acercamiento con el proceso de UX durante
@@ -23,17 +23,38 @@ Un **data dashboard** es una herramienta para las empresas que analizan informac
     * Reporta las acciones y los resultados generados.
 
     * Delimita estrategias y objetivos organizacionales.
+
+
+**Sitemas ya existentes de dashboard**
+
+Algunas de las referencias que encontramos que nos podian servir de ejemplo fueron: 
+
+* Google Analytics
+[Google Analytics](https://www.google.com/intl/es_ALL/analytics/features/index.html)
+<img align="center" src="./imagenes/google.png" />
+
+* Instituto Politécnico Nacional
+**Ete sitio solo esta abierto durante la temporada de exámenes de admisión**
+[IPN](http://www.ipn.mx/ofertaeducativa/Paginas/Estadisticas.aspx)
+
+
+* Mailchimp
+[Mailchimp](https://blog.mailchimp.com/new-list-dashboard/)
+<img align="center" src="./imagenes/mail.jpg" />
+
+* Quickbooks
+[Quickbooks](https://quickbooks.intuit.com/reporting/)
+<img align="center" src="./imagenes/quick.png" />
 ----
 
 ### Objetivos
 
 * Desarrollar un proyecto en el cual se impletente una interfaz con una usuabilidad fácil de manejar, y con la que las Training Managers puedan obtener más fácilmente los datos que necesiten de las alumnas.
 
-* Conocer más acerca del proceso de UX, durante el desarrollo del proyecto de **data dashboard** se implementara User Experience, obteniendo inforación del usuario atraves de la investigación(entrevistas).
+* Conocer más acerca del proceso de UX, durante el desarrollo del proyecto de data dashboard se implementara User Experience, obteniendo inforación del usuario atraves de la investigación(entrevistas).
 ----
 
 ### Proceso
-----
 
 * ### Obtención de datos
 Cuando se nos entregaron los requerimientos del proyecto de **data dashboard**, lo primero que pensamos que deberiamos hacer fue en un acercamiento, mediante una entrevista a la Training Manager de nuestra sede México (Lucile). Esto para conocer mejor, el por que las Training Managers requieren manejar data, y como seria el diseño e implementación de la mejor solución que nosotros pudieramos ofrecerles.
@@ -61,41 +82,30 @@ Por otra parte, también buscamos referencias de otros sistemas de manejo de dat
     8. Además de las Training Manager,¿quién más del equipo de laboratoria usa esta data?   
 
 
-***Nota*** Aparte de nuestra entrevista con la Training Manager de México(Lucile), gracias a nuestra compañeras logramos obtener las entrevistas de Training Manager de otras sedes.
-
-**Sitemas ya existentes de dashboard**
-
-Algunas de las referencias que encontramos que nos podian servir de ejemplo fueron: 
-
-* Google Analytics
-[Google Analytics](https://www.google.com/intl/es_ALL/analytics/features/index.html)
-<img align="center" src="./imagenes/google.png" />
-
-* Instituto Politécnico Nacional
-[IPN](http://www.ipn.mx/ofertaeducativa/Paginas/Estadisticas.aspx)
-<img align="center" src="" />
-
-* Mailchimp
-[Mailchimp](https://blog.mailchimp.com/new-list-dashboard/)
-<img align="center" src="./imagenes/mail.jpg" />
-
-* Quickbooks
-[Quickbooks](https://quickbooks.intuit.com/reporting/)
-<img align="center" src="./imagenes/quick.png" />
+***Nota*** Además de nuestra entrevista con la Training Manager de México(Lucile), gracias a nuestra compañeras logramos obtener las entrevistas de Training Manager de otras sedes.
 ----
 
 ### Necesidades del usuario
+
+Con la información obtenida en la entrevista, hemos podido darnos cuenta de que no solamente son lxs Training Manager, quienes tienen acceso a la información de las estudiantes, sino que es todo el equipo de laboratoria quien tiene el acceso a está información, para seguir el desempeño decada una ellxs; además de que nos mencionaron la importancia para ellos, de la utilización de un visualizador de datos, ya que actualmente laboratoria no cuenta con uno, y usan formato de excel para su visualización, y el proceso para la obtención de los datos en este formato es muy largo. Por este motivo les seria más eficaz un data dashboard. 
+
+ > ***Ultilidad del data dashboard***
+    1. Visualizar los datos de las estudiantes de una manera más rápida.
+    2. Comparar el rendimiento de las estudiantes
+    3. 
+
+
 ----
 
 ### Planificación
 
-> Primera
-
 Ahora que hemos tenido un acercamiento con el usuario, y obtuvimos los datos que necesitamos por ahora, podemos comenzar un filtro, y asi poder ver que priorizar y que poder dejar para hacer después de que las actividades priorizadas estes hechas, comenzamos con un prototipado de como queremos que sea nuestra interfaz(baja fidelidad), que es el sketch. En este pondremos lo que nosotras, con la obtención de datos ya pasados por nuestros filtros, la que será la mejor solución.
+> **Filtro**
+    *
 
 * ### Sketch (baja fidelidad)
 
-Con los datos que logramos obtener, por medio de la entrevista logramos hacer un diseño(baja fidelidad), con el cuel podemos comenzar a trabajar.
+Con los datos que logramos obtener, a través de la entrevista logramos hacer un diseño(baja fidelidad), por el cual nos podemos guiar para comenzar a trabajar.
 
 <img align="center" src="./imagenes/1.jpg" />
 
@@ -107,7 +117,7 @@ Con los datos que logramos obtener, por medio de la entrevista logramos hacer un
 
 <img align="center" src="./imagenes/5.jpg" />
 
- ***Nota*** Por las respuestas obtenidas durante la entrevista con nuestra Training Manager, y las adqueridas de otros Training Managers, diseñamos una interfaz sencilla y de fácil utilización.  
+ ***Nota*** Con las respuestas obtenidas durante la entrevista con nuestra Training Manager, y las adqueridas de otros Training Managers, decidimos que un diseñamos con una interfaz sencilla y fácil de utilizar sería lo más adecuado(durante el proceso de implementación también se podrían relaizar cambios en el diseño).  
 
 * ### Diseño(Alta fidelidad)
 Teniendo encunta los sketch de baja fidelidad se crearon los sketch de alta fidelidad, utilizando los colores emrpesariales asi como la sencilles que piden las TM para poder accesar al data dashboard.
@@ -115,10 +125,21 @@ Teniendo encunta los sketch de baja fidelidad se crearon los sketch de alta fide
 * ### Sketch (alta fidelidad)
  <img align="center" src="./imagenes/s.jpg" />
 
+ >Nuestra primera vista, es un formulario de acceso para evitar que cualquier otra persona que no sea del equipo de laboratoria, tenga acceso a la informacion de las alumnas.
+
  <img align="center" src="./imagenes/s1.jpg" />
+
+ >En la segunda vista colocamos los botones despegables para que puedan filtrar que sede y generaciones desean consultar.
 
  <img align="center" src="./imagenes/s2.jpg" />
 
+>En esta vista, mostramos como sera el despegable de sedes.
+
  <img align="center" src="./imagenes/s3.jpg" />
 
+>En la cuarta vista, enseñamos como sera el despegable de generaciones
+
  <img align="center" src="./imagenes/s4.jpg" />
+
+>En la ultima vista mostramos, en que parte vamos a mostrar los datos y como queremos que se visualizen.
+
