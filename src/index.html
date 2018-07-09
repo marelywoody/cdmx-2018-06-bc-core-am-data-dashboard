@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link href="./Open_Sans/OpenSans-Bold.ttf" rel="stylesheet">
-    <link href="./Bitter/Bitter-Bold.ttf" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link href="./Open_Sans/OpenSans-Regular.ttf" rel="stylesheet">
+    <link href="./Bitter/Bitter-Bold.ttf" rel="stylesheet">
     <link rel="icon" href="./imagenes/laboratoria.ico">
   </head>
   <body>
@@ -18,7 +18,7 @@
         <hr class="renglon">
       </header>
 
-        <div id="cuerpo" class="col-4 offset-md-4">
+        <div id="cuerpo" class= "col-4 offset-md-4">
           <form id="usuario" class="text-center form-group">
             <input type="email" class="form-control" placeholder="Usuario" id="btn-move">
             <input type="password" class="form-control" placeholder="Contraseña">
@@ -31,29 +31,28 @@
           <form class="form-group">
             <select id="sede" class="custom-select" required>
               <option value="" disabled selected>Selecciona una sede</option>
-              <option value="cdmx">CDMX</option>
+              <option value="lima">Lima</option>
             </select>
           </form>
         </div>
 
         <div id="menu2" class="col-md-2">
-          <form class="form-group">
+          <form class="form-group">    
            <select id="generacion" class="custom-select" required>
               <option value="" disabled selected>Selecciona una Generación</option>
-              <option value="cuarta">cuarta</option>
             </select>
           </form>
         </div>
       </aside>
 
       <main id="data">
-
+          
       </main>
       <div id="resultadosGeneration">
       </div>
 
       <footer class="fixed-bottom">
-        <img src="./imagenes/flecha.jpg" alt="flecha" class="offset-11" id="arrow">
+        <img src="./imagenes/flecha.jpg" alt="flecha" class="img-responsive offset-11" id="arrow">
       </footer>
 
       <script src="data.js"></script>
