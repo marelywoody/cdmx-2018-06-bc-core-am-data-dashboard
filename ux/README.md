@@ -52,6 +52,10 @@ Algunas de las referencias que encontramos que nos podian servir de ejemplo fuer
 * Desarrollar un proyecto en el cual se impletente una interfaz con una usuabilidad fácil de manejar, y con la que las Training Managers puedan obtener más fácilmente los datos que necesiten de las alumnas.
 
 * Conocer más acerca del proceso de UX, durante el desarrollo del proyecto de data dashboard se implementara User Experience, obteniendo inforación del usuario atraves de la investigación(entrevistas).
+
+###Objetivo especifico
+
+* Crear durante el tiempo de desarrollo de este proyecto una interfaz sencilla, de manera de que la interacción en la busqueda de la información sobre las estudiantes sea menos complicado.
 ----
 
 ### Proceso
@@ -91,19 +95,24 @@ Con la información obtenida en la entrevista, hemos podido darnos cuenta de que
 
  > ***Ultilidad del data dashboard***
     1. Visualizar los datos de las estudiantes de una manera más rápida.
-    2. Comparar el rendimiento de las estudiantes
-    3. 
-
-
+    2. Comparar el rendimiento de las estudiantes en su desempeño durante el Bootcamp.
+    3. Comparar la eficacia de los métodos utilizados entre las sedes.
+    4. Visualizar los inidcadores cuando algunos métodos no estén funcionando, para poder realizar los cambios oportunamente.
 ----
 
 ### Planificación
 
 Ahora que hemos tenido un acercamiento con el usuario, y obtuvimos los datos que necesitamos por ahora, podemos comenzar un filtro, y asi poder ver que priorizar y que poder dejar para hacer después de que las actividades priorizadas estes hechas, comenzamos con un prototipado de como queremos que sea nuestra interfaz(baja fidelidad), que es el sketch. En este pondremos lo que nosotras, con la obtención de datos ya pasados por nuestros filtros, la que será la mejor solución.
-> **Filtro**
-    *
 
-* ### Sketch (baja fidelidad)
+> ***Filtro***
+    * Mostrar los datos de la generación actual.
+    * Mostrar su rendimiento.
+    * No importa si no tiene gráficas, que sea algo más númerico para visualizar
+    * Mostrar las alumnas de otras sedes.
+
+***Prototipos***
+
+*  ***Sketch*** (baja fidelidad)
 
 Con los datos que logramos obtener, a través de la entrevista logramos hacer un diseño(baja fidelidad), por el cual nos podemos guiar para comenzar a trabajar.
 
@@ -137,9 +146,8 @@ Teniendo encunta los sketch de baja fidelidad se crearon los sketch de alta fide
 
  <img align="center" src="./imagenes/s3.jpg" />
 
->En la cuarta vista, enseñamos como sera el despegable de generaciones
+>En la cuarta vista, enseñamos como sera el despegable de generaciones.Tanto el botón de sedes y generaciones esta posicionado en el lado superior izquierdo para que el despliegue de los datos,tenga espacio para mostrarse.
 
  <img align="center" src="./imagenes/s4.jpg" />
 
->En la ultima vista mostramos, en que parte vamos a mostrar los datos y como queremos que se visualizen.
-
+>En la ultima vista mostramos, en que parte vamos a mostrar los datos y como queremos que se visualizen. El botón de sedes y generación, permaneceran visibles, para que sea más práctico el moviento de la visualización de los datos.

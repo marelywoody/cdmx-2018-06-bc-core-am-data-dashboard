@@ -23,11 +23,6 @@ body{
   top: 2em;
 }
 
-#btn-move{
-  position: relative;
-  bottom: 1em;
-}
-
 #arrow{
   width: 5em;
   height: 6em;
@@ -37,7 +32,7 @@ body{
    position: absolute;
    top: 9em;
  }
-
- #resultadosGeneration{
+ 
+  #resultadosGeneration{
   margin-top:8%;
- }
+  }
