@@ -1,5 +1,5 @@
 body{
-  font-family:'Open Sans';
+  font-family: 'Open Sans';
 }
 #sede, #generacion{
   background-color: #ffe521;
@@ -17,12 +17,20 @@ body{
   margin-top: 8%;
   margin-bottom: 8%;
 }
-
 #buton{
   position: relative;
   top: 2em;
 }
-
+#btn-move{
+  position: relative;
+  bottom: 1em;
+}
+#pie{
+   padding: 0em;
+   position: fixed;
+   left: 60em;
+   bottom: 0em;
+}
 #arrow{
   width: 5em;
   height: 6em;
@@ -32,7 +40,3 @@ body{
    position: absolute;
    top: 9em;
  }
- 
-  #resultadosGeneration{
-  margin-top:8%;
-  }
