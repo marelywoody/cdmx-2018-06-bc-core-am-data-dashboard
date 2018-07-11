@@ -4,7 +4,9 @@ body{
 #sede, #generacion{
   background-color: #ffe521;
 }
-
+#sidebar{
+  position: fixed;
+}
 .renglon{
   width: 100%;
   border: 5px solid #ffe521;
@@ -28,15 +30,19 @@ body{
 #pie{
    padding: 0em;
    position: fixed;
-   left: 60em;
-   bottom: 0em;
 }
 #arrow{
-  width: 5em;
-  height: 6em;
+  width: 12em;
+  height: 8em;
 }
 
  #menu2{
    position: absolute;
-   top: 9em;
+   top: 3.5em;
+   left: 1em;
+   width: 10.6em;
+ }
+ #menu{
+  position: relative;
+   left: 1em;
  }
