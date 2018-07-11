@@ -1,6 +1,6 @@
 // declaramos las variables en donde queremos que se guarden nuestros valores de los id obtenidos con getElementId de los id de html
 let body = document.getElementById('cuerpo');
-// ocultamos los elementos que no queremos que se muestren al cargar la página 
+// ocultamos los elementos que no queremos que se muestren al cargar la página
 let menu = document.getElementById('menu');
 menu.style.display = 'none';
 
@@ -20,14 +20,14 @@ function access() {
 let sede = document.getElementById('sede');
 let generation = document.getElementById('generacion');
 // drawSede esta funcion lo que hace es crear dinamicamente las opciones de nuestro select sedes
-drawSedes = (data) => { 
+drawSedes = (data) => {
   // declaramos una variable donde guardaremos las iteraciones de sedes
   let sedes = '';
   // creamos una variable y le pasamos un array del objeto
   const campus = Object.keys(data);
-  // iteramos la variable anterior para obeter las sede 
+  // iteramos la variable anterior para obeter las sede
   campus.forEach((inst) => {
-    // en cada iteración creamos un option con una sede diferente 
+    // en cada iteración creamos un option con una sede diferente
     sedes += `<option value= "${inst}">${inst}</option>`;
   });
   // imprimimos en el select de html los option creados en la iteración y además le agramaos otro option disabled
@@ -38,7 +38,7 @@ drawSedes = (data) => {
 drawGeneration = (data) => {
   // declaramos una variable donde guardaremos las opciones
   let generations;
-  // creamos un evento para la selección de sede 
+  // creamos un evento para la selección de sede
   sede.addEventListener('change', event => {
     // al presionar una sede nos mostrara el segundo select que es el de generaciones
     menu2.style.display = 'inline-block';
@@ -62,7 +62,7 @@ drawGeneration = (data) => {
         // imprimimos en el html el nodo
         document.getElementById('generacion').appendChild(generations);
       });
-    });      
+    });
   });
 };
 // en esta funcion creamos el evento para el segundo select generaciones
@@ -71,6 +71,48 @@ getGeneration = (data) => {
     let getGene = generation.value;
     let sedesValue = sede.value;
     let dataEstudiantes = computeStudentsStats(data);
-    drawStudents(dataEstudiantes);
-  });   
+    drawStudents(dataEstudiantes)
+
+  });
 };
+drawStudents = (data) => {
+let cajaGeneraciones =   document.getElementById('resultadosGeneration')
+
+if(cajaGeneraciones.hasChildNodes()) {
+
+  while(cajaGeneraciones.childNodes.length >= 1){
+    cajaGeneraciones.removeChild(cajaGeneraciones.firstChild);
+  }}
+let sede = document.getElementById('sede').value;
+let generation = document.getElementById('generacion').value;
+var estudianteSede = data.filter((estudiante) => {
+    if(estudiante.campus ==  sede && estudiante.generation == generation
+    ){
+ return estudiante
+  }
+})
+estudianteSede.forEach((estudiante)=>{
+
+  let cajaEstudiante = document.createElement("article");
+  // console.log(cajaEstudiante)
+  cajaEstudiante.setAttribute("class","jumbotron");
+
+  let nombre1 = document.createElement("p");
+  nombre1.appendChild(document.createTextNode('Name: '+ estudiante.name));
+  cajaEstudiante.appendChild(nombre1);
+  let correo = document.createElement("p");
+  correo.appendChild(document.createTextNode('Email: ' + estudiante.email));
+  cajaEstudiante.appendChild(correo);
+
+  let generacion = document.createElement("p");
+  generacion.appendChild(document.createTextNode('Generación: '+ estudiante.generation));
+  cajaEstudiante.appendChild(generacion );
+
+  let campus = document.createElement("p");
+  campus.appendChild(document.createTextNode('Campus: '+ estudiante.campus));
+  cajaEstudiante.appendChild(campus );
+
+cajaGeneraciones.appendChild(cajaEstudiante);
+})
+
+}
