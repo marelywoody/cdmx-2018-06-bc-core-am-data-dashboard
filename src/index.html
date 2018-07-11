@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
     <link href="./Open_Sans/OpenSans-Regular.ttf" rel="stylesheet">
-    <link href="./Bitter/Bitter-Bold.ttf" rel="stylesheet">
     <link rel="icon" href="./imagenes/laboratoria.ico">
   </head>
   <body>
@@ -26,29 +25,32 @@
           </form>
         </div>
 
-      <aside class="row fixed-left">
-        <div id="menu" class="col-md-2">
+      <aside id="sidebar" class="row fixed-left">
+        <div id="menu">
           <form class="form-group">
             <select id="sede" class="custom-select" required>
             </select>
           </form>
         </div>
 
+
         <div id="menu2" class="col-md-2">
           <form class="form-group">
+
            <select id="generacion" class="custom-select" required>
            </select>
           </form>
         </div>
       </aside>
 
-      <main id="data">
+      <main id="data" class="offset-2 main">
+        <div id="resultadosGeneration"></div>
       </main>
-      <div id="resultadosGeneration">
-      </div>
 
       <footer class="fixed-bottom">
-        <img src="./imagenes/flecha.png" alt="flecha" class="offset-11" id="arrow">
+
+        <img src="./imagenes/flechas.png" alt="flechas" id="arrow" class="img-fluid">
+
       </footer>
 
       <script src="data.js"></script>
