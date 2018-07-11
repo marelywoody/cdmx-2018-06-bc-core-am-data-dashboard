@@ -2,7 +2,7 @@ const laboratoria = 'https://raw.githubusercontent.com/marelywoody/cdmx-2018-06-
 
 window.onload = () => {
   fetch(laboratoria).then(res => res.json())
-    .then((data) => { 
+    .then((data) => {
       computeStudentsStats(data);
       computeGenerationsStats(data);
       drawSedes(data);
@@ -27,7 +27,7 @@ window.computeStudentsStats = (data) => {
       for (i in studentsGet) {
         name = studentsGet[i].nombre;
         email = studentsGet[i].correo;
-        const themeStats = data[key].generacion[generationGet].estudiantes[i].progreso; 
+        const themeStats = data[key].generacion[generationGet].estudiantes[i].progreso;
         status = themeStats.duracionPrograma;
         completedPercentage = themeStats.porcentajeCompletado;
         const student = {
@@ -56,7 +56,6 @@ window.computeStudentsStats = (data) => {
       }
     });
   }
-  console.log(students)
   return students;
 };
 
