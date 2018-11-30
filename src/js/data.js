@@ -1,13 +1,13 @@
 // guardamos nuestra ruta en una variable para utilizarla después
 const laboratoria = 'https://raw.githubusercontent.com/marelywoody/cdmx-2018-06-bc-core-am-data-dashboard/master/data/laboratoria.json';
-// inicializamos el evento cuando se termine de cargar la página 
+// inicializamos el evento cuando se termine de cargar la página
 window.onload = () => {
-  // hacemos el fetch llamando a nuestra variable donde esta guardada la url y 
+  // hacemos el fetch llamando a nuestra variable donde esta guardada la url y
   // hacemos nuestra primera promesa donde queremos que nos regrese un json
   fetch(laboratoria).then(res => res.json())
     // en la segunda  promesa entramos ya a los datos que se encuentran en nuetsro .json
-    .then((data) => { 
-      // pasamos los datos del json a las funciones que vamos a utilizar 
+    .then((data) => {
+      // pasamos los datos del json a las funciones que vamos a utilizar
       computeStudentsStats(data);
       computeGenerationsStats(data);
       drawSedes(data);
@@ -81,7 +81,7 @@ window.computeStudentsStats = (data) => {
         const theme = data[key].generacion[generationGet].estudiantes[i].progreso.temas;
         // con la variable anterior devolvemos un array con los valores de las propiedades
         Object.values(theme).forEach((getTheme) => {
-          // completedPercentage2, durationTheme, duractionThemeComplete fueron declaradas al inicio, lo que hacemos es solo guardar los datos que queremos en cada una 
+          // completedPercentage2, durationTheme, duractionThemeComplete fueron declaradas al inicio, lo que hacemos es solo guardar los datos que queremos en cada una
           completedPercentage2 = getTheme.porcentajeCompletado;
           durationTheme = getTheme.duracionTema;
           duractionThemeComplete = getTheme.duracionTemaCompletado;
@@ -124,7 +124,7 @@ window.computeGenerationsStats = (data) => {
           average: 0,
           count: 0
         };
-        // guardamos en average el porcentaje completado 
+        // guardamos en average el porcentaje completado
         average += getStudent[i].progreso.porcentajeCompletado;
         // dividimos avarage entre el numero de estudiantes para obtener el porcetaje
         average = Math.round(average / getStudent.length);
