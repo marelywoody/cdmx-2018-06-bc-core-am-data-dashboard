@@ -1,56 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="./assets/Open_Sans/OpenSans-Regular.ttf" rel="stylesheet">
-    <link rel="icon" href="./assets/img/laboratoria.ico">
-  </head>
-  <body>
-
-    <div class="container-fluid">
-
-      <header id="encabezado">
-        <h1 class="text-center" id="imagen"><img src="./assets/img/logo.png" alt="laboratoria"></h1>
-        <hr class="renglon">
-      </header>
-
-        <div id="cuerpo" class= "col-4 offset-md-4">
-          <form id="usuario" class="text-center form-group">
-            <input type="email" class="form-control" placeholder="Usuario" id="btn-move">
-            <input type="password" class="form-control" placeholder="Contraseña">
-            <input type="button" value="Ingresar" class="btn btn-warning btn-md" id="buton">
-          </form>
-        </div>
-
-      <aside id="sidebar" class="row fixed-left">
-        <div id="menu">
-          <form class="form-group">
-            <select id="sede" class="custom-select" required>
-            </select>
-          </form>
-        </div>
-
-        <div id="menu2">
-          <form class="form-group">    
-           <select id="generacion" class="custom-select" required>
-           </select>
-          </form>
-        </div>
-      </aside>
-
-      <main id="data" class="offset-2 main">
-        <div id="resultadosGeneration"></div>
-      </main>
-
-      <footer class="fixed-bottom">
-        <img src="./assets/img/flecha.png" alt="flechas" id="arrow" class="img-fluid">
-      </footer>
-
-      <script src="./js/data.js"></script>
-      <script src="./js/main.js"></script>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/img/laboratoria.ico">
+  <title>DASHBOARD</title>
+</head>
+<body>
+  <div>
+    <div>
+      <div>
+        <header>
+          <div id="button-logOut"></div>
+        </header>
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+  <div>
+    <div>
+      <div>
+        <form>
+          <input type="email" id="input-email" placeholder="Ingresa tu usuario">
+          <input type="password" id="input-password" placeholder="Ingresa la contraseña">
+          <input type="button" id="login" value="Ingresar">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div id="container-data">
+        <form>
+          <select style="display:none"  id="select-sede">
+          </select>
+          <select style="display:none" id="select-generation">
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/main.js"></script>
+<script src="js/data.js"></script>
+<script src="js/login.js"></script>
+<script src="js/output.js"></script>
+</body>
